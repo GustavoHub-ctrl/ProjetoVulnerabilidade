@@ -65,4 +65,4 @@ def buscar_usuario(usuario_id):
 if __name__ == '__main__':
     init_db()
     # Vulnerabilidade proposital: modo debug ativo (Bandit B201)
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True)
